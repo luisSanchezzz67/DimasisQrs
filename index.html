@@ -128,6 +128,14 @@ body {
   </style>
 </head>
 <body>
+  h2 Mosaic Ripple<br>Loading Animation
+
+- const cells = 4
+div.mosaic-loader
+  - for (let i = 0; i < cells; i++)
+    - for (let j = 0; j < cells; j++) 
+      div(class='cell d-' + (i + j))
+  
   <script>
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwgE8HV6QBYd91dJIxGwoYj-1Pi86igfj7KQuJA9lqESQQ0JRY/exec";
     
@@ -149,13 +157,7 @@ body {
 
   </script>
   
-  h2 Mosaic Ripple<br>Loading Animation
-
-- const cells = 4
-div.mosaic-loader
-  - for (let i = 0; i < cells; i++)
-    - for (let j = 0; j < cells; j++) 
-      div(class='cell d-' + (i + j))
+  
   
   
 </body>
